@@ -1,0 +1,5 @@
+google_cse: 'Google Custom Search'
+search_engine_id: 'Search Engine ID'
+manage_google_cse_settings: 'Управление настройками Google Custom Search'
+plugin_setup_required_warning: 'Необходимо <a href="{:google_cse_admin_settings_url}">настроить плагин Google Custom Search</a>'
+search_engine_id_setup_help: 'Получите ваш Search Engine ID <a target="_blank" href="https://cse.google.com/cse/all">здесь</a>, затем скопируйте его в это поле'

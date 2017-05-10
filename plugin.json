@@ -1,0 +1,17 @@
+{
+  "description": {
+    "en": "Google Custom Search",
+    "ru": "Google Custom Search",
+    "uk": "Google Custom Search"
+  },
+  "url": "https://github.com/pytsite/plugin-google_cse",
+  "author": {
+    "name": "Alexander Shepetko",
+    "email": "a@shepetko.com",
+    "url": "https://shepetko.com"
+  },
+  "requires": {
+    "packages": [],
+    "plugins": []
+  }
+}

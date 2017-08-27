@@ -1,4 +1,6 @@
 {
+  "name": "plugins.google_cse",
+  "version": "0.1.1",
   "description": {
     "en": "Google Custom Search",
     "ru": "Google Custom Search",

@@ -8,14 +8,15 @@ __license__ = 'MIT'
 
 
 def _init():
-    from pytsite import lang, tpl, permissions, settings, router, assetman
+    from pytsite import lang, tpl, router
+    from plugins import permissions, settings, assetman
     from . import _settings_form, _eh
 
     # Resources
-    lang.register_package(__name__, alias='google_cse')
-    tpl.register_package(__name__, alias='google_cse')
+    lang.register_package(__name__)
+    tpl.register_package(__name__)
 
-    assetman.register_package(__name__, alias='google_cse')
+    assetman.register_package(__name__)
     assetman.js_module('google-cse-widget', __name__ + '@js/google-cse-widget')
     assetman.t_js(__name__ + '@**')
 

@@ -1,6 +1,6 @@
 """PytSite Google Custom Search API
 """
-from pytsite import settings as _settings
+from plugins import settings as _settings
 from . import _error
 
 __author__ = 'Alexander Shepetko'

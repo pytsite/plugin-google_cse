@@ -1,7 +1,7 @@
 """PytSite Google Custom Search Plugin Event Handlers
 """
-from pytsite import settings as _settings, assetman as _assetman, tpl as _tpl, auth as _auth, lang as _lang, \
-    router as _router
+from pytsite import tpl as _tpl, lang as _lang, router as _router
+from plugins import assetman as _assetman, settings as _settings, auth as _auth
 
 __author__ = 'Alexander Shepetko'
 __email__ = 'a@shepetko.com'

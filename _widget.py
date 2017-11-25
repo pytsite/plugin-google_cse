@@ -2,7 +2,8 @@
 
 See https://developers.google.com/custom-search/docs/element for details.
 """
-from pytsite import widget as _widget, html as _html
+from pytsite import html as _html
+from plugins import widget as _widget
 from . import _api
 
 __author__ = 'Alexander Shepetko'

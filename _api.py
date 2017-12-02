@@ -1,6 +1,6 @@
 """PytSite Google Custom Search API
 """
-from plugins import settings as _settings
+from pytsite import reg as _reg
 from . import _error
 
 __author__ = 'Alexander Shepetko'
@@ -9,7 +9,7 @@ __license__ = 'MIT'
 
 
 def get_cx():
-    cx = _settings.get('google_cse.cx')
+    cx = _reg.get('google_cse.cx')
 
     if not cx:
         raise _error.SearchEngineIdNotDefined()

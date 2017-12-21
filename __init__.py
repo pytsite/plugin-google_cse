@@ -11,16 +11,23 @@ if _plugman.is_installed(__name__):
     from . import _widget as widget
 
 
-def plugin_load():
-    from pytsite import lang
+def _register_assetman_resources():
     from plugins import assetman
 
-    # Resources
-    lang.register_package(__name__)
+    if not assetman.is_package_registered(__name__):
+        assetman.register_package(__name__)
+        assetman.js_module('google-cse-widget', __name__ + '@js/google-cse-widget')
+        assetman.t_js(__name__)
 
-    assetman.register_package(__name__)
-    assetman.js_module('google-cse-widget', __name__ + '@js/google-cse-widget')
-    assetman.t_js(__name__)
+    return assetman
+
+
+def plugin_install():
+    _register_assetman_resources().build(__name__)
+
+
+def plugin_load():
+    _register_assetman_resources()
 
 
 def plugin_load_uwsgi():
@@ -29,6 +36,7 @@ def plugin_load_uwsgi():
     from . import _settings_form, _eh
 
     # Resources
+    lang.register_package(__name__)
     tpl.register_package(__name__)
 
     # Lang globals
@@ -44,10 +52,3 @@ def plugin_load_uwsgi():
 
     # Event handlers
     router.on_dispatch(_eh.router_dispatch)
-
-
-def plugin_install():
-    from plugins import assetman
-
-    plugin_load()
-    assetman.build(__name__)

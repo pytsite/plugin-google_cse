@@ -2,13 +2,13 @@
 
 See https://developers.google.com/custom-search/docs/element for details.
 """
-from pytsite import html as _html
-from plugins import widget as _widget
-from . import _api
-
 __author__ = 'Alexander Shepetko'
 __email__ = 'a@shepetko.com'
 __license__ = 'MIT'
+
+from pytsite import html as _html
+from plugins import widget as _widget
+from . import _api
 
 
 class Search(_widget.Abstract):

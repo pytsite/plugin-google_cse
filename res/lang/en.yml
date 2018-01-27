@@ -1,5 +1,4 @@
 google_cse: 'Google Custom Search'
 search_engine_id: 'Search Engine ID'
-manage_google_cse_settings: 'Manage Google Custom Search settings'
 plugin_setup_required_warning: 'You should <a href="{:google_cse_admin_settings_url}">setup Google Custom Search plugin</a>'
 search_engine_id_setup_help: 'Obtain your Search Engine ID <a target="_blank" href="https://cse.google.com/cse/all">here</a> then copy it to this field'

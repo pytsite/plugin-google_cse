@@ -18,8 +18,9 @@ class Search(_widget.Abstract):
     def __init__(self, uid: str, **kwargs):
         super().__init__(uid, **kwargs)
 
-        self._group_wrap = False
-        self._js_module = 'google-cse-widget'
+        self._form_group = False
+        self._has_messages = False
+        self._js_modules.append('google-cse-widget')
         self._link_target = kwargs.get('link_target', '_self')
         self._enable_order_by = kwargs.get('enable_order_by', False)
         self._data['cx'] = kwargs.get('cx', _api.get_cx())

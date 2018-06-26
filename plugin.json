@@ -1,6 +1,6 @@
 {
   "name": "google_cse",
-  "version": "1.4",
+  "version": "1.5",
   "description": {
     "en": "Google Custom Search",
     "ru": "Google Custom Search",
@@ -13,9 +13,8 @@
     "url": "https://shepetko.com"
   },
   "requires": {
-    "packages": [],
     "plugins": [
-      "assetman",
+      "assetman>=2.0",
       "auth",
       "font_awesome",
       "settings>=1.3",

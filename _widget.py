@@ -2,7 +2,7 @@
 
 See https://developers.google.com/custom-search/docs/element for details.
 """
-__author__ = 'Alexander Shepetko'
+__author__ = 'Oleksandr Shepetko'
 __email__ = 'a@shepetko.com'
 __license__ = 'MIT'
 
@@ -20,7 +20,6 @@ class Search(_widget.Abstract):
 
         self._form_group = False
         self._has_messages = False
-        self._js_modules.append('google-cse-widget')
         self._link_target = kwargs.get('link_target', '_self')
         self._enable_order_by = kwargs.get('enable_order_by', False)
         self._data['cx'] = kwargs.get('cx', _api.get_cx())

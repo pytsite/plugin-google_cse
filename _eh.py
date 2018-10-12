@@ -15,4 +15,4 @@ def router_dispatch():
     if not cx and _auth.get_current_user().has_role('dev'):
         _router.session().add_warning_message(_lang.t('google_cse@plugin_setup_required_warning'))
     else:
-        _assetman.add_inline_js(_tpl.render('google_cse@js', {'cx': cx}))
+        _assetman.inline_js(_tpl.render('google_cse@js', {'cx': cx}))

@@ -4,6 +4,11 @@
 ## Changelog
 
 
+### 2.3 (2019-07-12)
+
+Support of `pytsite-9.0`.
+
+
 ### 2.2 (2018-10-22)
 
 Support of `assetman-5.x` and `widget-4.x`.
